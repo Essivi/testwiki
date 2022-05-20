@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>홍길동의 홈페이지</title>
+    <link rel="stylesheet" href="../css/navigationbar.css">
+    <link rel="stylesheet" href="../css/linkcolor.css">
+
+    <style>
+      section{
+	      background: #222222;
+        width: 75%;
+        margin-left: 25px;
+      }
+    nav {
+      float: left;
+      width: auto;
+      height: auto; /* only for demonstration, should be removed */
+      background: rgb(48, 48, 48);
+      padding: 20px;
+      border: 1px solid rgb(143, 143, 143);
+      margin-left: 25px;
+    }
+    
+    nav dl {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    article {
+      float: left;
+      padding: 20px;
+      width: 96%;
+      background-color: #2b2b2b;
+      height: auto; /* only for demonstration, should be removed */
+    }
+
+    table, th, td {
+    float: right;
+    border:1px solid orange;
+    border-collapse: collapse;
+    }
+
+    aside {
+      float: right;
+      width: 15%;
+      height: auto;
+      border:1px solid orange;
+    }
+
+    section::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    @media (max-width: 600px) {
+    nav, article, aside {
+      width: 100%;
+      height: auto;
+      }
+    }
+
+/* 테이블을 이용한 리스트의 비율을 지정하는 부분 */
+    th.listheader{
+      width: 98.5%;
+    }
+    th.listname{
+      width: 23%;
+      
+    }
+    th.listcontents{
+      width: 74%;
+      text-align: left;
+    }
+
+    </style>
+
+</head>
+<body>
+    <ul>
+        <li><a class="active" href="../index.html">Home</a></li>
+        <li><a href="./html/resume.html">온라인이력서</a></li>
+        <li><a href="./html/ulife.html">대학생활</a></li>
+        <li><a href="./test.html">포트폴리오</a></li>
+    </ul>
+    
+    <section>
+      <br>
+      <h1>고길동</h1>
+      <br><br>
+      <p>In this example, we have created a header, two columns/boxes and a footer. On smaller screens, the columns will stack on top of each other.</p>
+      <br>
+  
+        <nav>
+          <dl>
+            <p>목차</p>
+            <dt id="ch1_return"><a href="#ch1">1</a>.개요</dt>
+            <dt id="ch2_return"><a href="#ch2">2</a>.작중 행적</dd>
+            <dt><a href="#">3</a>.그외 수난(피해목록)</dt>
+          </dl>
+        </nav>
+
+        <table>
+          <tr>
+            <th class="listheader";>프로필</th>
+          </tr>
+          <tr>
+            <th class="listheader";><img src="../img/gogildong.jpg" alt="고길동_프로필"></th>
+          </tr>
+          <tr>
+            <th class="listheader";>고길동</th>
+          </tr>
+          <tr>
+            <th class="listcontents">남성</th>
+            <th class="listname">성별</th>
+            
+          </tr>
+          <tr>
+            <th class="listcontents">회사원(과장)</th>
+            <th class="listname">직업</th>
+            
+          </tr>
+          <tr>
+            <th class="listname"><br><br><br>생년월일<br><br><br><br></th>
+            <th class="listcontents">1943년 (원작 기준 41세)<br>1947년 (KBS 아기공룡 둘리, 작중 기준 41세)<br>1956년 (극장판 얼음별 대모험 작중 기준 41세)<br>1968년 (NEW 아기공룡 둘리 작중 기준 41세)</th>
+          </tr>
+          <tr>
+            <th class="listname">거주지</th>
+            <th class="listcontents">서울특별시 도봉구 쌍문동 2-2</th>
+          </tr>
+          <tr>
+            <th class="listname">캐릭터 원안</th>
+            <th class="listcontents">김수정</th>
+          </tr>
+        </table>
+
+        <article>
+          <h1 id="ch1"><a href="#ch1_return" id="link">1.</a>개요</h1>
+          <hr style="color: gray;">
+          <p>아기공룡 둘리의 주역 중 하나이자 또 다른 주인공. 서울특별시 도봉구 쌍문동[19]에 사는 평범한 샐러리맨으로 직급은 과장(이른바 만년 과장)이다. 3살 연하 부인[20] 박정자와 아들 고철수, 딸 고영희를 두고 있으며, 어린 조카[21] 거기에 나중에는 희동이의 동생 양동이에 도우너 동생 코로깨까지 들어와서 사람 6명에 둘리 일당 넷[22]이라는 대가족을 이끄는 가장이 된다.</p>
+          <br>
+          <p>어릴 적 둘리에게 감정 이입이 될 때는 둘리를 마구 갈궈서 못살게 구는 심술쟁이 아저씨였지만, 나이가 들면서 사회 물을 먹을수록 이렇게 불쌍한 아저씨도 없다는 평가를 받는 인물로[23], 그야말로 커서 보면 불쌍한 캐릭터의 대표격인 캐릭터이다.[24]</p>
+          <br>
+          <p>사실 둘리 연재 초반에만 해도 이름이 없었고, 고씨도 아니었다. 단행본 1권에도 보면 고길동이라고 부르지 않고 그냥 '김 형'이라고 불리는 데다가 생김새도 미묘하게 달랐지만 스토리가 진행되면서 캐릭터성이 확립된다.</p>
+          <br>
+          <p>위 사진에도 나와있듯이, 고길동의 나이가 30세(??)라는 루머도 있는데 작중 시기가 80년대임을 감안하더라도 30세에 초등학생 자녀를 둔 아버지이자 기업 과장이라는 것은 현실성이 떨어진다. 젊게 잡아도 30대 후반 이상이다.[25]</p>
+          <br>
+          <p>모델은 김수정 화백이 무명 시절 얹혀살던 하숙집 주인으로 본업은 한성여자중학교 교장이었으며, 학생들에게 시조를 지어주는 것이 취미였다고 한다.</p>
+        </article>
+
+        <article>
+          <h1 id="ch2"><a href="#ch2_return" id="link">2.</a>작중 행적</h1>
+          <hr style="color: gray;">
+          <p>어느 날, 영희의 뒤를 쫓아온 둘리가 집에 얹혀살게 되면서 그의 인생이 꼬이기 시작한다. 설상가상으로 조카인 희동이와 양동이도 떠맡게 되고[26], 둘리는 자기 친구들이랍시고 타조, 외계인 등 이상한 녀석들도 집에 끌어들이고, 음악 한다는 옆집 백수까지 등장해서[27] 하루도 속 편한 날이 없어서 정말 눈물 난다. 실제 둘리의 배낭여행 1편에서는 장독대 담장에서 마이콜을 보는 둘리 일행을 못마땅하게 여기고 희동이를 제외하곤 똥침하며 떨어뜨려 버린다. 처음에는 둘리를 쫓아내려고 먼 곳으로 버리기까지 했지만 계속 돌아오는 것을 보면 포기한 것 같다. 가끔 둘리와 죽이 잘 맞는 경우가 있으나, 대개 톰과 제리 비슷한 앙숙 관계로 지낸다.[28] 그래도 5+3 하여 8인 가족을 어떻게든 먹여 살리는 것을 보면 능력은 있는 듯하다. 아기공룡 둘리 마지막 화에서는 둘리 일당이 오방떡에 의해 갈 길을 가게 되었을 때 매우 기뻐했고 살이 무척 찌셨다. 둘리가 돌아와 가정까지 꾸려 세들어 살고 있는 후속작이자 외전인 베이비 사우르스 돌리에서는 둘리 자식들과 새로 들어온 군식구들이 저지르는 사건들 때문에 야위고 스트레스성 탈모까지 생겨서 고생하는 게 안습하다.[29] 지못미. 캐릭터 설정에서는 둘리가 오기 전에 76kg이었으나, 둘리가 등장하자 66kg이 되어버렸다. 실제로 1권 처음에는 상당히 통통한 길동 씨였지만 둘리가 오면서부터는 매우 훌쭉해진다.</p>
+          <br>
+          <p>원작 마지막 화에서는 도우너의 아버지인 오방떡에 의해 둘리 일행이 모두 떠나게 되자 크게 웃을 정도로 기뻐하며 초반처럼 다시 토실토실해졌다.</p>
+          <br>
+          <p>둘리 일당 때문에 온갖 육체적, 정신적 고통을 받고 있으며, 금전적으로도 집 1~2채 살 만한 돈을 날려버렸다. 초기 설정에는 바둑, LP판 수집, 양주 수집, 낚시, 화초 가꾸기 등 꽤 고상하고 다양한 취미 생활을 즐겼지만, 그마저도 둘리 일당이 레코드판과 술병, 낚싯대를 통째로 박살을 내면서 말아먹었다. 추가로 둘리 일행 덕에 아마존 밀림, 저승, 우주 등 안 끌려가 본 곳이 없을 정도다. 더군다나 심의에 걸리기 전 초기 설정에는 철수와 영희도 아빠를 바보로 아는 장난 심한 불량끼가 넘치는 남매였다고 한다. 어찌나 둘리 일당들 때문에 빡이 쳐 왔는지 일반적인 고길동의 모습은 너무 고생해서 살이 쪽 빠진 상태이고, 둘리 일당이 잠시만 사라지면 살이 다시 불어나 뚱보가 된다.</p>
+        </article>
+
+      </section>
+
+
+
+</html>

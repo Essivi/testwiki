@@ -1,0 +1,14 @@
+  table, th, td {
+    border:1px solid orange;
+    padding: 2px;
+  }
+/* 프로필 컨텐트 양식 */
+  th.profile_name{
+    text-align: center;
+  }
+  td.profile_contents{
+    text-align: center;
+  }
+  td.profile_inform{
+    text-align: left;
+  }
