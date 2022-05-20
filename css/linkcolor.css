@@ -1,0 +1,71 @@
+/*목차 링크 css*/
+dl a:link {
+    color: orange;
+    background-color: transparent;
+    text-decoration: none;
+  }
+dl a:visited {
+    color: orange;
+    background-color: transparent;
+    text-decoration: none;
+  }
+dl a:hover {
+    color: orange;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+dl a:active {
+    color: orange;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+
+/*본문 링크 css*/
+section a:link {
+    color: orange;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+section a:visited {
+    color: orange;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+section a:hover {
+    color: orange;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+section a:active {
+    color: #fff;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+/* 제목링크 css*/
+section h2 a:link {
+  color: #fff;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+section h2 a:visited {
+  color: #fff;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+section h2 a:hover {
+  color: #fff;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+section h2 a:active {
+  color: #fff;
+  background-color: transparent;
+  text-decoration: underline;
+}
